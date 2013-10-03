@@ -1,0 +1,207 @@
+C:\Users\Chris\Dropbox\Graphics 2013\Assignments\Project 1 Windows 8\obj\Debug\MiniCube.WinRTXaml.csprojResolveAssemblyReference.cache
+C:\Users\Chris\Dropbox\Graphics 2013\Assignments\Project 1 Windows 8\obj\Debug\App.g.i.cs
+C:\Users\Chris\Dropbox\Graphics 2013\Assignments\Project 1 Windows 8\obj\Debug\App.g.cs
+C:\Users\Chris\Dropbox\Graphics 2013\Assignments\Project 1 Windows 8\obj\Debug\Common\StandardStyles.g.i.cs
+C:\Users\Chris\Dropbox\Graphics 2013\Assignments\Project 1 Windows 8\obj\Debug\Common\StandardStyles.g.cs
+C:\Users\Chris\Dropbox\Graphics 2013\Assignments\Project 1 Windows 8\obj\Debug\MainPage.g.i.cs
+C:\Users\Chris\Dropbox\Graphics 2013\Assignments\Project 1 Windows 8\obj\Debug\MainPage.g.cs
+C:\Users\Chris\Dropbox\Graphics 2013\Assignments\Project 1 Windows 8\obj\Debug\XamlTypeInfo.g.cs
+C:\Users\Chris\Dropbox\Graphics 2013\Assignments\Project 1 Windows 8\obj\Debug\Common\StandardStyles.xaml
+C:\Users\Chris\Dropbox\Graphics 2013\Assignments\Project 1 Windows 8\bin\DebugWinRTXaml\Project1.WinRTXaml.exe
+C:\Users\Chris\Dropbox\Graphics 2013\Assignments\Project 1 Windows 8\bin\DebugWinRTXaml\Project1.WinRTXaml.pdb
+C:\Users\Chris\Dropbox\Graphics 2013\Assignments\Project 1 Windows 8\bin\DebugWinRTXaml\resources.pri
+C:\Users\Chris\Dropbox\Graphics 2013\Assignments\Project 1 Windows 8\bin\DebugWinRTXaml\AppxManifest.xml
+C:\Users\Chris\Dropbox\Graphics 2013\Assignments\Project 1 Windows 8\bin\DebugWinRTXaml\MiniCube.WinRTXaml.build.appxrecipe
+C:\Users\Chris\Dropbox\Graphics 2013\Assignments\Project 1 Windows 8\bin\DebugWinRTXaml\SharpDX.Direct2D1.dll
+C:\Users\Chris\Dropbox\Graphics 2013\Assignments\Project 1 Windows 8\bin\DebugWinRTXaml\SharpDX.Direct3D11.dll
+C:\Users\Chris\Dropbox\Graphics 2013\Assignments\Project 1 Windows 8\bin\DebugWinRTXaml\SharpDX.dll
+C:\Users\Chris\Dropbox\Graphics 2013\Assignments\Project 1 Windows 8\bin\DebugWinRTXaml\SharpDX.DXGI.dll
+C:\Users\Chris\Dropbox\Graphics 2013\Assignments\Project 1 Windows 8\bin\DebugWinRTXaml\SharpDX.Toolkit.dll
+C:\Users\Chris\Dropbox\Graphics 2013\Assignments\Project 1 Windows 8\bin\DebugWinRTXaml\SharpDX.Toolkit.Game.dll
+C:\Users\Chris\Dropbox\Graphics 2013\Assignments\Project 1 Windows 8\bin\DebugWinRTXaml\SharpDX.Toolkit.Graphics.dll
+C:\Users\Chris\Dropbox\Graphics 2013\Assignments\Project 1 Windows 8\bin\DebugWinRTXaml\SharpDX.Toolkit.Input.dll
+C:\Users\Chris\Dropbox\Graphics 2013\Assignments\Project 1 Windows 8\bin\DebugWinRTXaml\SharpDX.xml
+C:\Users\Chris\Dropbox\Graphics 2013\Assignments\Project 1 Windows 8\bin\DebugWinRTXaml\SharpDX.Toolkit.xml
+C:\Users\Chris\Dropbox\Graphics 2013\Assignments\Project 1 Windows 8\bin\DebugWinRTXaml\SharpDX.Toolkit.Game.xml
+C:\Users\Chris\Dropbox\Graphics 2013\Assignments\Project 1 Windows 8\bin\DebugWinRTXaml\SharpDX.Toolkit.Graphics.xml
+C:\Users\Chris\Dropbox\Graphics 2013\Assignments\Project 1 Windows 8\bin\DebugWinRTXaml\SharpDX.Toolkit.Input.xml
+C:\Users\Chris\Dropbox\Graphics 2013\Assignments\Project 1 Windows 8\bin\DebugWinRTXaml\SharpDX.Direct3D11.xml
+C:\Users\Chris\Dropbox\Graphics 2013\Assignments\Project 1 Windows 8\bin\DebugWinRTXaml\SharpDX.DXGI.xml
+C:\Users\Chris\Dropbox\Graphics 2013\Assignments\Project 1 Windows 8\bin\DebugWinRTXaml\SharpDX.Direct2D1.xml
+C:\Users\Chris\Dropbox\Graphics 2013\Assignments\Project 1 Windows 8\obj\Debug\App.xaml
+C:\Users\Chris\Dropbox\Graphics 2013\Assignments\Project 1 Windows 8\obj\Debug\MainPage.xaml
+C:\Users\Chris\Dropbox\Graphics 2013\Assignments\Project 1 Windows 8\obj\Debug\Project1.WinRTXaml.exe
+C:\Users\Chris\Dropbox\Graphics 2013\Assignments\Project 1 Windows 8\obj\Debug\Project1.WinRTXaml.pdb
+C:\Users\Chris\Dropbox\Graphics 2013\Assignments\Project 1 Windows 8\obj\Debug\SharpDX\en-us\SharpDX.Properties.Resources.resw
+C:\Users\Chris\Dropbox\Graphics 2013\Assignments\Project 1 Windows 8\obj\Debug\MiniCube.WinRTXaml.csproj.GenerateResource.Cache
+C:\Users\Chris\Dropbox\Graphics 2013\Assignments\Project 1 Windows 8\obj\Debug\SharpDX\priconfig.xml.intermediate
+C:\Users\Chris\Dropbox\Graphics 2013\Assignments\Project 1 Windows 8\obj\Debug\SharpDX\Resources.resfiles.intermediate
+C:\Users\Chris\Dropbox\Graphics 2013\Assignments\Project 1 Windows 8\obj\Debug\SharpDX.pri
+C:\Users\Chris\Dropbox\Graphics 2013\Assignments\Project 1 Windows 8\obj\Debug\SharpDX\LanguageQualifiers.txt
+C:\Users\Chris\Dropbox\Graphics 2013\Assignments\Project 1 Windows 8\obj\Debug\priconfig.xml.intermediate
+C:\Users\Chris\Dropbox\Graphics 2013\Assignments\Project 1 Windows 8\obj\Debug\layout.resfiles.intermediate
+C:\Users\Chris\Dropbox\Graphics 2013\Assignments\Project 1 Windows 8\obj\Debug\resources.resfiles.intermediate
+C:\Users\Chris\Dropbox\Graphics 2013\Assignments\Project 1 Windows 8\obj\Debug\pri.resfiles.intermediate
+C:\Users\Chris\Dropbox\Graphics 2013\Assignments\Project 1 Windows 8\obj\Debug\priconfig.xml
+C:\Users\Chris\Dropbox\Graphics 2013\Assignments\Project 1 Windows 8\obj\Debug\layout.resfiles
+C:\Users\Chris\Dropbox\Graphics 2013\Assignments\Project 1 Windows 8\obj\Debug\resources.resfiles
+C:\Users\Chris\Dropbox\Graphics 2013\Assignments\Project 1 Windows 8\obj\Debug\pri.resfiles
+C:\Users\Chris\Dropbox\Graphics 2013\Assignments\Project 1 Windows 8\obj\Debug\LanguageQualifiers.txt
+C:\Users\Chris\Dropbox\Graphics 2013\Assignments\Project 1 Windows 8\obj\Debug\ProjectArchitectures.txt
+C:\Users\Chris\Dropbox\Graphics 2013 Shared\Assignments\Project 1 Windows 8\obj\Debug\MiniCube.WinRTXaml.csprojResolveAssemblyReference.cache
+C:\Users\Chris\Dropbox\Graphics 2013 Shared\Assignments\Project 1 Windows 8\obj\Debug\App.g.i.cs
+C:\Users\Chris\Dropbox\Graphics 2013 Shared\Assignments\Project 1 Windows 8\obj\Debug\App.g.cs
+C:\Users\Chris\Dropbox\Graphics 2013 Shared\Assignments\Project 1 Windows 8\obj\Debug\Common\StandardStyles.g.i.cs
+C:\Users\Chris\Dropbox\Graphics 2013 Shared\Assignments\Project 1 Windows 8\obj\Debug\Common\StandardStyles.g.cs
+C:\Users\Chris\Dropbox\Graphics 2013 Shared\Assignments\Project 1 Windows 8\obj\Debug\MainPage.g.i.cs
+C:\Users\Chris\Dropbox\Graphics 2013 Shared\Assignments\Project 1 Windows 8\obj\Debug\MainPage.g.cs
+C:\Users\Chris\Dropbox\Graphics 2013 Shared\Assignments\Project 1 Windows 8\obj\Debug\XamlTypeInfo.g.cs
+C:\Users\Chris\Dropbox\Graphics 2013 Shared\Assignments\Project 1 Windows 8\obj\Debug\App.xaml
+C:\Users\Chris\Dropbox\Graphics 2013 Shared\Assignments\Project 1 Windows 8\obj\Debug\Common\StandardStyles.xaml
+C:\Users\Chris\Dropbox\Graphics 2013 Shared\Assignments\Project 1 Windows 8\obj\Debug\MainPage.xaml
+C:\Users\Chris\Dropbox\Graphics 2013 Shared\Assignments\Project 1 Windows 8\obj\Debug\Project1.WinRTXaml.exe
+C:\Users\Chris\Dropbox\Graphics 2013 Shared\Assignments\Project 1 Windows 8\obj\Debug\Project1.WinRTXaml.pdb
+I:\Graphics\Project 1 Windows 8\bin\DebugWinRTXaml\Project1.WinRTXaml.exe
+I:\Graphics\Project 1 Windows 8\bin\DebugWinRTXaml\Project1.WinRTXaml.pdb
+I:\Graphics\Project 1 Windows 8\bin\DebugWinRTXaml\resources.pri
+I:\Graphics\Project 1 Windows 8\bin\DebugWinRTXaml\AppxManifest.xml
+I:\Graphics\Project 1 Windows 8\bin\DebugWinRTXaml\MiniCube.WinRTXaml.build.appxrecipe
+I:\Graphics\Project 1 Windows 8\bin\DebugWinRTXaml\SharpDX.Direct2D1.dll
+I:\Graphics\Project 1 Windows 8\bin\DebugWinRTXaml\SharpDX.Direct3D11.dll
+I:\Graphics\Project 1 Windows 8\bin\DebugWinRTXaml\SharpDX.dll
+I:\Graphics\Project 1 Windows 8\bin\DebugWinRTXaml\SharpDX.DXGI.dll
+I:\Graphics\Project 1 Windows 8\bin\DebugWinRTXaml\SharpDX.Toolkit.dll
+I:\Graphics\Project 1 Windows 8\bin\DebugWinRTXaml\SharpDX.Toolkit.Game.dll
+I:\Graphics\Project 1 Windows 8\bin\DebugWinRTXaml\SharpDX.Toolkit.Graphics.dll
+I:\Graphics\Project 1 Windows 8\bin\DebugWinRTXaml\SharpDX.Toolkit.Input.dll
+I:\Graphics\Project 1 Windows 8\bin\DebugWinRTXaml\SharpDX.xml
+I:\Graphics\Project 1 Windows 8\bin\DebugWinRTXaml\SharpDX.Toolkit.xml
+I:\Graphics\Project 1 Windows 8\bin\DebugWinRTXaml\SharpDX.Toolkit.Game.xml
+I:\Graphics\Project 1 Windows 8\bin\DebugWinRTXaml\SharpDX.Toolkit.Graphics.xml
+I:\Graphics\Project 1 Windows 8\bin\DebugWinRTXaml\SharpDX.Toolkit.Input.xml
+I:\Graphics\Project 1 Windows 8\bin\DebugWinRTXaml\SharpDX.Direct3D11.xml
+I:\Graphics\Project 1 Windows 8\bin\DebugWinRTXaml\SharpDX.DXGI.xml
+I:\Graphics\Project 1 Windows 8\bin\DebugWinRTXaml\SharpDX.Direct2D1.xml
+I:\Graphics\Project 1 Windows 8\obj\Debug\MiniCube.WinRTXaml.csprojResolveAssemblyReference.cache
+I:\Graphics\Project 1 Windows 8\obj\Debug\App.g.i.cs
+I:\Graphics\Project 1 Windows 8\obj\Debug\App.g.cs
+I:\Graphics\Project 1 Windows 8\obj\Debug\Common\StandardStyles.g.i.cs
+I:\Graphics\Project 1 Windows 8\obj\Debug\Common\StandardStyles.g.cs
+I:\Graphics\Project 1 Windows 8\obj\Debug\MainPage.g.i.cs
+I:\Graphics\Project 1 Windows 8\obj\Debug\MainPage.g.cs
+I:\Graphics\Project 1 Windows 8\obj\Debug\XamlTypeInfo.g.cs
+I:\Graphics\Project 1 Windows 8\obj\Debug\App.xaml
+I:\Graphics\Project 1 Windows 8\obj\Debug\Common\StandardStyles.xaml
+I:\Graphics\Project 1 Windows 8\obj\Debug\MainPage.xaml
+I:\Graphics\Project 1 Windows 8\obj\Debug\Project1.WinRTXaml.exe
+I:\Graphics\Project 1 Windows 8\obj\Debug\Project1.WinRTXaml.pdb
+I:\Graphics\Project 1 Windows 8\obj\Debug\SharpDX\en-us\SharpDX.Properties.Resources.resw
+I:\Graphics\Project 1 Windows 8\obj\Debug\MiniCube.WinRTXaml.csproj.GenerateResource.Cache
+I:\Graphics\Project 1 Windows 8\obj\Debug\SharpDX.pri
+I:\Graphics\Project 1 Windows 8\obj\Debug\SharpDX\LanguageQualifiers.txt
+I:\Graphics\Project 1 Windows 8\obj\Debug\priconfig.xml.intermediate
+I:\Graphics\Project 1 Windows 8\obj\Debug\layout.resfiles.intermediate
+I:\Graphics\Project 1 Windows 8\obj\Debug\resources.resfiles.intermediate
+I:\Graphics\Project 1 Windows 8\obj\Debug\pri.resfiles.intermediate
+I:\Graphics\Project 1 Windows 8\obj\Debug\priconfig.xml
+I:\Graphics\Project 1 Windows 8\obj\Debug\layout.resfiles
+I:\Graphics\Project 1 Windows 8\obj\Debug\resources.resfiles
+I:\Graphics\Project 1 Windows 8\obj\Debug\pri.resfiles
+I:\Graphics\Project 1 Windows 8\obj\Debug\LanguageQualifiers.txt
+I:\Graphics\Project 1 Windows 8\obj\Debug\ProjectArchitectures.txt
+D:\BitBucket_Repository\graphics-project\bin\DebugWinRTXaml\Project1.WinRTXaml.exe
+D:\BitBucket_Repository\graphics-project\bin\DebugWinRTXaml\Project1.WinRTXaml.pdb
+D:\BitBucket_Repository\graphics-project\bin\DebugWinRTXaml\resources.pri
+D:\BitBucket_Repository\graphics-project\bin\DebugWinRTXaml\AppxManifest.xml
+D:\BitBucket_Repository\graphics-project\bin\DebugWinRTXaml\MiniCube.WinRTXaml.build.appxrecipe
+D:\BitBucket_Repository\graphics-project\bin\DebugWinRTXaml\SharpDX.Direct2D1.dll
+D:\BitBucket_Repository\graphics-project\bin\DebugWinRTXaml\SharpDX.Direct3D11.dll
+D:\BitBucket_Repository\graphics-project\bin\DebugWinRTXaml\SharpDX.dll
+D:\BitBucket_Repository\graphics-project\bin\DebugWinRTXaml\SharpDX.DXGI.dll
+D:\BitBucket_Repository\graphics-project\bin\DebugWinRTXaml\SharpDX.Toolkit.dll
+D:\BitBucket_Repository\graphics-project\bin\DebugWinRTXaml\SharpDX.Toolkit.Game.dll
+D:\BitBucket_Repository\graphics-project\bin\DebugWinRTXaml\SharpDX.Toolkit.Graphics.dll
+D:\BitBucket_Repository\graphics-project\bin\DebugWinRTXaml\SharpDX.Toolkit.Input.dll
+D:\BitBucket_Repository\graphics-project\bin\DebugWinRTXaml\SharpDX.xml
+D:\BitBucket_Repository\graphics-project\bin\DebugWinRTXaml\SharpDX.Toolkit.xml
+D:\BitBucket_Repository\graphics-project\bin\DebugWinRTXaml\SharpDX.Toolkit.Game.xml
+D:\BitBucket_Repository\graphics-project\bin\DebugWinRTXaml\SharpDX.Toolkit.Graphics.xml
+D:\BitBucket_Repository\graphics-project\bin\DebugWinRTXaml\SharpDX.Toolkit.Input.xml
+D:\BitBucket_Repository\graphics-project\bin\DebugWinRTXaml\SharpDX.Direct3D11.xml
+D:\BitBucket_Repository\graphics-project\bin\DebugWinRTXaml\SharpDX.DXGI.xml
+D:\BitBucket_Repository\graphics-project\bin\DebugWinRTXaml\SharpDX.Direct2D1.xml
+D:\BitBucket_Repository\graphics-project\obj\Debug\MiniCube.WinRTXaml.csprojResolveAssemblyReference.cache
+D:\BitBucket_Repository\graphics-project\obj\Debug\App.g.i.cs
+D:\BitBucket_Repository\graphics-project\obj\Debug\App.g.cs
+D:\BitBucket_Repository\graphics-project\obj\Debug\Common\StandardStyles.g.i.cs
+D:\BitBucket_Repository\graphics-project\obj\Debug\Common\StandardStyles.g.cs
+D:\BitBucket_Repository\graphics-project\obj\Debug\MainPage.g.i.cs
+D:\BitBucket_Repository\graphics-project\obj\Debug\MainPage.g.cs
+D:\BitBucket_Repository\graphics-project\obj\Debug\XamlTypeInfo.g.cs
+D:\BitBucket_Repository\graphics-project\obj\Debug\App.xaml
+D:\BitBucket_Repository\graphics-project\obj\Debug\Common\StandardStyles.xaml
+D:\BitBucket_Repository\graphics-project\obj\Debug\MainPage.xaml
+D:\BitBucket_Repository\graphics-project\obj\Debug\Project1.WinRTXaml.exe
+D:\BitBucket_Repository\graphics-project\obj\Debug\Project1.WinRTXaml.pdb
+D:\BitBucket_Repository\graphics-project\obj\Debug\SharpDX\en-us\SharpDX.Properties.Resources.resw
+D:\BitBucket_Repository\graphics-project\obj\Debug\MiniCube.WinRTXaml.csproj.GenerateResource.Cache
+D:\BitBucket_Repository\graphics-project\obj\Debug\SharpDX.pri
+D:\BitBucket_Repository\graphics-project\obj\Debug\SharpDX\LanguageQualifiers.txt
+D:\BitBucket_Repository\graphics-project\obj\Debug\priconfig.xml.intermediate
+D:\BitBucket_Repository\graphics-project\obj\Debug\layout.resfiles.intermediate
+D:\BitBucket_Repository\graphics-project\obj\Debug\resources.resfiles.intermediate
+D:\BitBucket_Repository\graphics-project\obj\Debug\pri.resfiles.intermediate
+D:\BitBucket_Repository\graphics-project\obj\Debug\priconfig.xml
+D:\BitBucket_Repository\graphics-project\obj\Debug\layout.resfiles
+D:\BitBucket_Repository\graphics-project\obj\Debug\resources.resfiles
+D:\BitBucket_Repository\graphics-project\obj\Debug\pri.resfiles
+D:\BitBucket_Repository\graphics-project\obj\Debug\LanguageQualifiers.txt
+D:\BitBucket_Repository\graphics-project\obj\Debug\ProjectArchitectures.txt
+I:\gitRepository\graphics-project\bin\DebugWinRTXaml\Project1.WinRTXaml.exe
+I:\gitRepository\graphics-project\bin\DebugWinRTXaml\Project1.WinRTXaml.pdb
+I:\gitRepository\graphics-project\bin\DebugWinRTXaml\resources.pri
+I:\gitRepository\graphics-project\bin\DebugWinRTXaml\AppxManifest.xml
+I:\gitRepository\graphics-project\bin\DebugWinRTXaml\MiniCube.WinRTXaml.build.appxrecipe
+I:\gitRepository\graphics-project\bin\DebugWinRTXaml\SharpDX.Direct2D1.dll
+I:\gitRepository\graphics-project\bin\DebugWinRTXaml\SharpDX.Direct3D11.dll
+I:\gitRepository\graphics-project\bin\DebugWinRTXaml\SharpDX.dll
+I:\gitRepository\graphics-project\bin\DebugWinRTXaml\SharpDX.DXGI.dll
+I:\gitRepository\graphics-project\bin\DebugWinRTXaml\SharpDX.Toolkit.dll
+I:\gitRepository\graphics-project\bin\DebugWinRTXaml\SharpDX.Toolkit.Game.dll
+I:\gitRepository\graphics-project\bin\DebugWinRTXaml\SharpDX.Toolkit.Graphics.dll
+I:\gitRepository\graphics-project\bin\DebugWinRTXaml\SharpDX.Toolkit.Input.dll
+I:\gitRepository\graphics-project\bin\DebugWinRTXaml\SharpDX.xml
+I:\gitRepository\graphics-project\bin\DebugWinRTXaml\SharpDX.Toolkit.xml
+I:\gitRepository\graphics-project\bin\DebugWinRTXaml\SharpDX.Toolkit.Game.xml
+I:\gitRepository\graphics-project\bin\DebugWinRTXaml\SharpDX.Toolkit.Graphics.xml
+I:\gitRepository\graphics-project\bin\DebugWinRTXaml\SharpDX.Toolkit.Input.xml
+I:\gitRepository\graphics-project\bin\DebugWinRTXaml\SharpDX.Direct3D11.xml
+I:\gitRepository\graphics-project\bin\DebugWinRTXaml\SharpDX.DXGI.xml
+I:\gitRepository\graphics-project\bin\DebugWinRTXaml\SharpDX.Direct2D1.xml
+I:\gitRepository\graphics-project\obj\Debug\MiniCube.WinRTXaml.csprojResolveAssemblyReference.cache
+I:\gitRepository\graphics-project\obj\Debug\App.g.i.cs
+I:\gitRepository\graphics-project\obj\Debug\App.g.cs
+I:\gitRepository\graphics-project\obj\Debug\Common\StandardStyles.g.i.cs
+I:\gitRepository\graphics-project\obj\Debug\Common\StandardStyles.g.cs
+I:\gitRepository\graphics-project\obj\Debug\MainPage.g.i.cs
+I:\gitRepository\graphics-project\obj\Debug\MainPage.g.cs
+I:\gitRepository\graphics-project\obj\Debug\XamlTypeInfo.g.cs
+I:\gitRepository\graphics-project\obj\Debug\App.xaml
+I:\gitRepository\graphics-project\obj\Debug\Common\StandardStyles.xaml
+I:\gitRepository\graphics-project\obj\Debug\MainPage.xaml
+I:\gitRepository\graphics-project\obj\Debug\Project1.WinRTXaml.exe
+I:\gitRepository\graphics-project\obj\Debug\Project1.WinRTXaml.pdb
+I:\gitRepository\graphics-project\obj\Debug\SharpDX\en-us\SharpDX.Properties.Resources.resw
+I:\gitRepository\graphics-project\obj\Debug\MiniCube.WinRTXaml.csproj.GenerateResource.Cache
+I:\gitRepository\graphics-project\obj\Debug\SharpDX.pri
+I:\gitRepository\graphics-project\obj\Debug\SharpDX\LanguageQualifiers.txt
+I:\gitRepository\graphics-project\obj\Debug\priconfig.xml.intermediate
+I:\gitRepository\graphics-project\obj\Debug\layout.resfiles.intermediate
+I:\gitRepository\graphics-project\obj\Debug\resources.resfiles.intermediate
+I:\gitRepository\graphics-project\obj\Debug\pri.resfiles.intermediate
+I:\gitRepository\graphics-project\obj\Debug\priconfig.xml
+I:\gitRepository\graphics-project\obj\Debug\layout.resfiles
+I:\gitRepository\graphics-project\obj\Debug\resources.resfiles
+I:\gitRepository\graphics-project\obj\Debug\pri.resfiles
+I:\gitRepository\graphics-project\obj\Debug\LanguageQualifiers.txt
+I:\gitRepository\graphics-project\obj\Debug\ProjectArchitectures.txt
