@@ -22,16 +22,23 @@ namespace Project1
         private float pix = 0.0625f; // 0.125f or 0.0625
         float zooming = 4.0f;
 
-        private int level = 3;
-        public float landscapeWidth = 2f;
-        public float landscapeHeight = 2f;
+        public int level = 1;
+        public float landscapeWidth = 4f;
+        public float landscapeHeight = 4f;
+
+        public Vector3 corner1;
+        public Vector3 corner2;
+        public Vector3 corner3;
+        public Vector3 corner4;
         //Here to set the Level, TODO create a new screen for level selecting
-        public void setLevel(int level, float landscapeHeight, float landscapeWidth)
-        {
-            this.landscapeWidth = landscapeWidth;
-            this.landscapeHeight = landscapeHeight;
-            this.level = level;
-        }
+
+        //public void setLevel(int level, float landscapeHeight, float landscapeWidth)
+        //{
+        //    this.landscapeWidth = landscapeWidth;
+        //    this.landscapeHeight = landscapeHeight;
+        //    this.level = level;
+        //}
+
         // an array of Vectors  without color setting
         private Vector3[] buffer;
         // an array of Vectors  with color setting
@@ -39,11 +46,12 @@ namespace Project1
         BufferGenerator bufferGenerator = new BufferGenerator();
 
 
-        public Landscape(Project1Game game)
+        public Landscape(Project1Game game, int level)
         {
+            this.level = level;
             this.SetBuffer();
             vertices = Buffer.Vertex.New(game.GraphicsDevice, colorBuffer);
-
+            setBoxBoundary();
             basicEffect = new BasicEffect(game.GraphicsDevice)
             {
                 View = game.camera.View,
@@ -59,40 +67,59 @@ namespace Project1
         public override void Update(GameTime gameTime)
         {
             // Listen to the keyboard to rotate the landscape
-            if (game.keyboardState.IsKeyDown(Keys.Left))
-            {
-                rotationY -= speed;
-                basicEffect.World = Matrix.RotationX(rotationX) * Matrix.RotationY(rotationY) * Matrix.RotationZ(rotationZ);
-            }
-            if (game.keyboardState.IsKeyDown(Keys.Right))
-            {
-                rotationY += speed;
-                basicEffect.World = Matrix.RotationX(rotationX) * Matrix.RotationY(rotationY) * Matrix.RotationZ(rotationZ);
-            }
-            if (game.keyboardState.IsKeyDown(Keys.Up))
-            {
-                rotationX -= speed;
-                basicEffect.World = Matrix.RotationX(rotationX) * Matrix.RotationY(rotationY) * Matrix.RotationZ(rotationZ);
-            }
-            if (game.keyboardState.IsKeyDown(Keys.Down))
-            {
-                rotationX += speed;
-                basicEffect.World = Matrix.RotationX(rotationX) * Matrix.RotationY(rotationY) * Matrix.RotationZ(rotationZ);
-            }
-            if (game.keyboardState.IsKeyDown(Keys.W))
-            {
-                zooming = zooming + 0.1f;
-            }
-            if (game.keyboardState.IsKeyDown(Keys.S))
-            {
-                zooming = zooming - 0.1f;
-                if (zooming < 2.0f)
-                {
-                    zooming = 2.0f;
-                }
-            }
+            //if (game.keyboardState.IsKeyDown(Keys.Left))
+            //{
+            //    rotationY -= speed;
+            //    basicEffect.World = Matrix.RotationX(rotationX) * Matrix.RotationY(rotationY) * Matrix.RotationZ(rotationZ);
+            //}
+            //if (game.keyboardState.IsKeyDown(Keys.Right))
+            //{
+            //    rotationY += speed;
+            //    basicEffect.World = Matrix.RotationX(rotationX) * Matrix.RotationY(rotationY) * Matrix.RotationZ(rotationZ);
+            //}
+            //if (game.keyboardState.IsKeyDown(Keys.Up))
+            //{
+            //    rotationX -= speed;
+            //    basicEffect.World = Matrix.RotationX(rotationX) * Matrix.RotationY(rotationY) * Matrix.RotationZ(rotationZ);
+            //}
+            //if (game.keyboardState.IsKeyDown(Keys.Down))
+            //{
+            //    rotationX += speed;
+            //    basicEffect.World = Matrix.RotationX(rotationX) * Matrix.RotationY(rotationY) * Matrix.RotationZ(rotationZ);
+            //}
+            //if (game.keyboardState.IsKeyDown(Keys.W))
+            //{
+            //    zooming = zooming + 0.1f;
+            //}
+            //if (game.keyboardState.IsKeyDown(Keys.S))
+            //{
+            //    zooming = zooming - 0.1f;
+            //    if (zooming < 2.0f)
+            //    {
+            //        zooming = 2.0f;
+            //    }
+            //}
             //basicEffect.World = Matrix.RotationX(0.1f) * Matrix.RotationY(0.2f) * Matrix.RotationZ(0);
-            basicEffect.Projection = Matrix.PerspectiveFovLH((float)Math.PI / zooming, (float)game.GraphicsDevice.BackBuffer.Width / game.GraphicsDevice.BackBuffer.Height, 0.1f, 100.0f);
+           // basicEffect.World = Matrix.RotationX(0.1f) * Matrix.RotationY(0.2f) * Matrix.RotationZ(0);
+           // basicEffect.Projection = Matrix.PerspectiveFovLH((float)Math.PI / zooming, (float)game.GraphicsDevice.BackBuffer.Width / game.GraphicsDevice.BackBuffer.Height, 0.1f, 100.0f);
+        }
+
+        public Boolean checkBoundary(Vector3 position)
+        {
+
+            if (position.Y > corner1.Y || position.Y > corner2.Y || position.Y > corner3.Y || position.Y > corner4.Y)
+                if(position.X >= corner1.X && position.X <= corner2.X && position.Z<=corner1.Z && position.Z>= corner4.Z)
+                    return true;
+            return false;
+        }
+
+        private void setBoxBoundary()
+        {
+            //The position of 4 connors of the landscape
+           corner1 = new Vector3(0.0f - landscapeWidth / 2, 0.0f, 0.0f + landscapeWidth / 2);//look from the top, left up conor
+           corner2 = new Vector3(0.0f + landscapeWidth / 2, 0.0f, 0.0f + landscapeHeight / 2);//look from the top, right up conor
+           corner3 = new Vector3(0.0f + landscapeWidth / 2, 0.0f, 0.0f - landscapeHeight / 2);//look from the top, right down conor
+           corner4 = new Vector3(0.0f - landscapeWidth / 2, 0.0f, 0.0f - landscapeHeight / 2);//look from the top, left down conor
         }
 
         public override void Draw(GameTime gameTime)
@@ -110,7 +137,7 @@ namespace Project1
         {
 
             bufferGenerator.SetPix(pix);
-
+            
             //To generate a random float number
             Random rd = new Random();
             float c1, c2, c3, c4;
@@ -140,11 +167,29 @@ namespace Project1
             this.bufferGenerator.setColorRanges();
             this.colorBuffer = bufferGenerator.setColor();
             this.colorBuffer = bufferGenerator.setCannonPos();
-            this.colorBuffer = bufferGenerator.AddBox(dpos1, dpos2, dpos3, dpos4);
             this.colorBuffer = bufferGenerator.AddBase(dpos1, dpos2, dpos3, dpos4);
+        }
+        public float getHeight(float x, float z)
+        {
+            for (int i = 0; i < colorBuffer.Length-1; i++ )
+            {
+                if (colorBuffer[i].Position.X == x && colorBuffer[i].Position.Z == z)
+                {
+                    return colorBuffer[i].Position.Y;
+                }     
+            }
+            return 0f;
+            
+        }
+        public VertexPositionColor getCannonPos()
+        {
+            return bufferGenerator.getCannonPos();
 
         }
+        public VertexPositionColor getTargetPos()
+        {
+            return bufferGenerator.getTargetPos();
 
- 
+        }
     }
 }

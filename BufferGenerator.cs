@@ -27,8 +27,8 @@ namespace Project1
         private int level;
         private double distance;
         private Vector3 dpos1;
-       
-
+        private VertexPositionColor cannonPosColor_5; // this is the centre postion of the cannon
+        private VertexPositionColor targetPosColor_5; // this is the centre postion of the target
 
         public void setLevel(int level, float landscapeWidth, float landscapeHeight, Vector3 dpos1)
         {
@@ -46,14 +46,25 @@ namespace Project1
             this.colorSetting = new ColorSetting();
             
         }
+        //return the position of cannon
+        public VertexPositionColor getCannonPos()
+        {
+            return cannonPosColor_5;
+        }
+        public VertexPositionColor getTargetPos()
+        {
+            return targetPosColor_5;
+        }
+        //set the position of cannon and target on landscape
         public VertexPositionColor[] setCannonPos()
         {
-            VertexPositionColor cannonPosColor_5 = colorBuffer[0];
+            cannonPosColor_5 = colorBuffer[0];
             VertexPositionColor cannonPosColor_4 = colorBuffer[0];
             VertexPositionColor cannonPosColor_3 = colorBuffer[0];
             VertexPositionColor cannonPosColor_2 = colorBuffer[0];
             VertexPositionColor cannonPosColor_1 = colorBuffer[0];
-            VertexPositionColor targetPosColor_5 = colorBuffer[0];
+
+            targetPosColor_5 = colorBuffer[0];
             VertexPositionColor targetPosColor_4 = colorBuffer[0];
             VertexPositionColor targetPosColor_3 = colorBuffer[0];
             VertexPositionColor targetPosColor_2 = colorBuffer[0];
@@ -61,7 +72,11 @@ namespace Project1
             Random rnd = new Random();
 
             //TODO change 2 and 12 according to the landwidth later
-            int opt = rnd.Next(2, 30);
+            Debug.WriteLine("pix = " + pix);
+            Debug.WriteLine("landwidth = " + landscapeWidth);
+            float pixNumber = landscapeWidth / pix - 8;
+            Debug.WriteLine(pixNumber);
+            int opt = rnd.Next(10, (int)pixNumber);
             double targetX = dpos1.X + opt * pix;
             double targetZ = Math.Sqrt((distance * distance - opt * opt));
             targetZ = Math.Round(targetZ);
@@ -98,19 +113,19 @@ namespace Project1
                     targetPosColor_3 = posColor3;
                     targetPosColor_2 = posColor2;
                     targetPosColor_1 = posColor1;
-
-                    //Debug.WriteLine("VertexPositionColor  1:    " + posColor1);
-                    //Debug.WriteLine("VertexPositionColor  2:    " + posColor2);
-                    //Debug.WriteLine("VertexPositionColor  3:    " + posColor3);
-                    //Debug.WriteLine("VertexPositionColor  4:    " + posColor4);
-                    //Debug.WriteLine("VertexPositionColor  5:    " + posColor5);
                 }
                 // for cannon position
-                if (posColor1.Position.X == dpos1.X + pix * 2f && posColor1.Position.Z == dpos1.Z - pix * 2f 
-                    && posColor2.Position.X == dpos1.X + pix * 3f && posColor2.Position.Z == dpos1.Z - pix * 2f
-                    && posColor3.Position.X == dpos1.X + pix * 3f && posColor3.Position.Z == dpos1.Z - pix * 3f
-                    && posColor4.Position.X == dpos1.X + pix * 2f && posColor4.Position.Z == dpos1.Z - pix * 3f)
+                if (posColor1.Position.X == dpos1.X + pix * 7f && posColor1.Position.Z == dpos1.Z - pix * 7f 
+                    && posColor2.Position.X == dpos1.X + pix * 8f && posColor2.Position.Z == dpos1.Z - pix * 7f
+                    && posColor3.Position.X == dpos1.X + pix * 8f && posColor3.Position.Z == dpos1.Z - pix * 8f
+                    && posColor4.Position.X == dpos1.X + pix * 7f && posColor4.Position.Z == dpos1.Z - pix * 8f)
                 {
+                    Debug.WriteLine("posColor1  = "+posColor1);
+                    Debug.WriteLine("posColor2  = " + posColor2);
+                    Debug.WriteLine("posColor3  = " + posColor3);
+                    Debug.WriteLine("posColor4  = " + posColor4);
+
+
                     float averageHight = (posColor1.Position.Y + posColor2.Position.Y + posColor3.Position.Y + posColor4.Position.Y + posColor5.Position.Y)/5;
                     posColor1.Position.Y = averageHight;
                     posColor2.Position.Y = averageHight;
@@ -128,13 +143,8 @@ namespace Project1
                     cannonPosColor_4 = posColor4;
                     cannonPosColor_3 = posColor3;
                     cannonPosColor_2 = posColor2;
-                    cannonPosColor_1 = posColor1;
+                    cannonPosColor_1 = posColor1;;
 
-                    //Debug.WriteLine("VertexPositionColor  1:    " + posColor1);
-                    //Debug.WriteLine("VertexPositionColor  2:    " + posColor2);
-                    //Debug.WriteLine("VertexPositionColor  3:    " + posColor3);
-                    //Debug.WriteLine("VertexPositionColor  4:    " + posColor4);
-                    //Debug.WriteLine("VertexPositionColor  5:    " + posColor5);
 
                 }
             }
@@ -288,6 +298,7 @@ namespace Project1
 
             return this.buffer;
         }
+
         public VertexPositionColor[] setColor()
         {
             List<VertexPositionColor> colorBufferList = this.colorBuffer.ToList();
@@ -315,44 +326,44 @@ namespace Project1
             Vector3 down4 = dpos4;
             down1.Y = down2.Y = down3.Y = down4.Y = 0f;
             // for the front side
-            colorBufferList.Add(new VertexPositionColor(dpos4, new Color(100, 2, 3)));
-            colorBufferList.Add(new VertexPositionColor(down3, new Color(100, 2, 3)));
-            colorBufferList.Add(new VertexPositionColor(down4, new Color(100, 2, 3)));
-            colorBufferList.Add(new VertexPositionColor(dpos4, new Color(100, 2, 3)));
-            colorBufferList.Add(new VertexPositionColor(dpos3, new Color(100, 2, 3)));
-            colorBufferList.Add(new VertexPositionColor(down3, new Color(100, 2, 3)));
+            colorBufferList.Add(new VertexPositionColor(dpos4, new Color(0, 100, 0)));
+            colorBufferList.Add(new VertexPositionColor(down3, new Color(0, 100, 0)));
+            colorBufferList.Add(new VertexPositionColor(down4, new Color(0, 100, 0)));
+            colorBufferList.Add(new VertexPositionColor(dpos4, new Color(0, 100, 0)));
+            colorBufferList.Add(new VertexPositionColor(dpos3, new Color(0, 100, 0)));
+            colorBufferList.Add(new VertexPositionColor(down3, new Color(0, 100, 0)));
 
             // for the back side
-            colorBufferList.Add(new VertexPositionColor(dpos2, new Color(100, 2, 3)));
-            colorBufferList.Add(new VertexPositionColor(down1, new Color(100, 2, 3)));
-            colorBufferList.Add(new VertexPositionColor(down2, new Color(100, 2, 3)));
-            colorBufferList.Add(new VertexPositionColor(dpos2, new Color(100, 2, 3)));
-            colorBufferList.Add(new VertexPositionColor(dpos1, new Color(100, 2, 3)));
-            colorBufferList.Add(new VertexPositionColor(down1, new Color(100, 2, 3)));
+            colorBufferList.Add(new VertexPositionColor(dpos2, new Color(0, 100, 0)));
+            colorBufferList.Add(new VertexPositionColor(down1, new Color(0, 100, 0)));
+            colorBufferList.Add(new VertexPositionColor(down2, new Color(0, 100, 0)));
+            colorBufferList.Add(new VertexPositionColor(dpos2, new Color(0, 100, 0)));
+            colorBufferList.Add(new VertexPositionColor(dpos1, new Color(0, 100, 0)));
+            colorBufferList.Add(new VertexPositionColor(down1, new Color(0, 100, 0)));
 
             // for the left side
-            colorBufferList.Add(new VertexPositionColor(dpos1, new Color(100, 2, 3)));
-            colorBufferList.Add(new VertexPositionColor(down4, new Color(100, 2, 3)));
-            colorBufferList.Add(new VertexPositionColor(down1, new Color(100, 2, 3)));
-            colorBufferList.Add(new VertexPositionColor(dpos1, new Color(100, 2, 3)));
-            colorBufferList.Add(new VertexPositionColor(dpos4, new Color(100, 2, 3)));
-            colorBufferList.Add(new VertexPositionColor(down4, new Color(100, 2, 3)));
+            colorBufferList.Add(new VertexPositionColor(dpos1, new Color(0, 100, 0)));
+            colorBufferList.Add(new VertexPositionColor(down4, new Color(0, 100, 0)));
+            colorBufferList.Add(new VertexPositionColor(down1, new Color(0, 100, 0)));
+            colorBufferList.Add(new VertexPositionColor(dpos1, new Color(0, 100, 0)));
+            colorBufferList.Add(new VertexPositionColor(dpos4, new Color(0, 100, 0)));
+            colorBufferList.Add(new VertexPositionColor(down4, new Color(0, 100, 0)));
 
             // for the right side
-            colorBufferList.Add(new VertexPositionColor(dpos3, new Color(100, 2, 3)));
-            colorBufferList.Add(new VertexPositionColor(down2, new Color(100, 2, 3)));
-            colorBufferList.Add(new VertexPositionColor(down3, new Color(100, 2, 3)));
-            colorBufferList.Add(new VertexPositionColor(dpos3, new Color(100, 2, 3)));
-            colorBufferList.Add(new VertexPositionColor(dpos2, new Color(100, 2, 3)));
-            colorBufferList.Add(new VertexPositionColor(down2, new Color(100, 2, 3)));
+            colorBufferList.Add(new VertexPositionColor(dpos3, new Color(0, 100, 0)));
+            colorBufferList.Add(new VertexPositionColor(down2, new Color(0, 100, 0)));
+            colorBufferList.Add(new VertexPositionColor(down3, new Color(0, 100, 0)));
+            colorBufferList.Add(new VertexPositionColor(dpos3, new Color(0, 100, 0)));
+            colorBufferList.Add(new VertexPositionColor(dpos2, new Color(0, 100, 0)));
+            colorBufferList.Add(new VertexPositionColor(down2, new Color(0, 100, 0)));
 
             // for the down side
-            colorBufferList.Add(new VertexPositionColor(down1, new Color(100, 2, 3)));
-            colorBufferList.Add(new VertexPositionColor(down3, new Color(100, 2, 3)));
-            colorBufferList.Add(new VertexPositionColor(down2, new Color(100, 2, 3)));
-            colorBufferList.Add(new VertexPositionColor(down1, new Color(100, 2, 3)));
-            colorBufferList.Add(new VertexPositionColor(down4, new Color(100, 2, 3)));
-            colorBufferList.Add(new VertexPositionColor(down3, new Color(100, 2, 3)));
+            colorBufferList.Add(new VertexPositionColor(down1, new Color(0, 100, 0)));
+            colorBufferList.Add(new VertexPositionColor(down3, new Color(0, 100, 0)));
+            colorBufferList.Add(new VertexPositionColor(down2, new Color(0, 100, 0)));
+            colorBufferList.Add(new VertexPositionColor(down1, new Color(0, 100, 0)));
+            colorBufferList.Add(new VertexPositionColor(down4, new Color(0, 100, 0)));
+            colorBufferList.Add(new VertexPositionColor(down3, new Color(0, 100, 0)));
 
             this.colorBuffer = colorBufferList.ToArray();
             return colorBuffer;
@@ -360,9 +371,6 @@ namespace Project1
         //add the box which contain the lanscape
         public VertexPositionColor[] AddBox(Vector3 dpos1, Vector3 dpos2, Vector3 dpos3, Vector3 dpos4)
         {
-
-
-
             List<VertexPositionColor> colorBufferList = this.colorBuffer.ToList();
             Vector3 top1 = dpos1;
             Vector3 top2 = dpos2;
@@ -376,55 +384,55 @@ namespace Project1
             Vector3 down4 = dpos4;
             down1.Y = down2.Y = down3.Y = down4.Y = 0f;
             //top side
-        //    VertexPositionTexture(top1, new Vector2(1.0f, 1.0f))
-            //// for the top side
-            //colorBufferList.Add(new VertexPositionColor(top1, new Color(1, 2, 3)));
-            //colorBufferList.Add(new VertexPositionColor(top3, new Color(1, 2, 3)));
-            //colorBufferList.Add(new VertexPositionColor(top2, new Color(1, 2, 3)));
-            //colorBufferList.Add(new VertexPositionColor(top1, new Color(1, 2, 3)));
-            //colorBufferList.Add(new VertexPositionColor(top4, new Color(1, 2, 3)));
-            //colorBufferList.Add(new VertexPositionColor(top3, new Color(1, 2, 3)));
+            //VertexPositionTexture(top1, new Vector2(1.0f, 1.0f))
+            // for the top side
+            colorBufferList.Add(new VertexPositionColor(top1, new Color(1, 2, 3)));
+            colorBufferList.Add(new VertexPositionColor(top3, new Color(1, 2, 3)));
+            colorBufferList.Add(new VertexPositionColor(top2, new Color(1, 2, 3)));
+            colorBufferList.Add(new VertexPositionColor(top1, new Color(1, 2, 3)));
+            colorBufferList.Add(new VertexPositionColor(top4, new Color(1, 2, 3)));
+            colorBufferList.Add(new VertexPositionColor(top3, new Color(1, 2, 3)));
 
-            //// for the down side
-            //colorBufferList.Add(new VertexPositionColor(down1, new Color(1, 2, 3)));
-            //colorBufferList.Add(new VertexPositionColor(down2, new Color(1, 2, 3)));
-            //colorBufferList.Add(new VertexPositionColor(down3, new Color(1, 2, 3)));
-            //colorBufferList.Add(new VertexPositionColor(down1, new Color(1, 2, 3)));
-            //colorBufferList.Add(new VertexPositionColor(down3, new Color(1, 2, 3)));
-            //colorBufferList.Add(new VertexPositionColor(down4, new Color(1, 2, 3)));
+            // for the down side
+            colorBufferList.Add(new VertexPositionColor(down1, new Color(1, 2, 3)));
+            colorBufferList.Add(new VertexPositionColor(down2, new Color(1, 2, 3)));
+            colorBufferList.Add(new VertexPositionColor(down3, new Color(1, 2, 3)));
+            colorBufferList.Add(new VertexPositionColor(down1, new Color(1, 2, 3)));
+            colorBufferList.Add(new VertexPositionColor(down3, new Color(1, 2, 3)));
+            colorBufferList.Add(new VertexPositionColor(down4, new Color(1, 2, 3)));
 
-            //// for the front side
-            //colorBufferList.Add(new VertexPositionColor(top4, new Color(1, 2, 3)));
-            //colorBufferList.Add(new VertexPositionColor(down3, new Color(1, 2, 3)));
-            //colorBufferList.Add(new VertexPositionColor(top3, new Color(1, 2, 3)));
-            //colorBufferList.Add(new VertexPositionColor(top4, new Color(1, 2, 3)));
-            //colorBufferList.Add(new VertexPositionColor(down4, new Color(1, 2, 3)));
-            //colorBufferList.Add(new VertexPositionColor(down3, new Color(1, 2, 3)));
+            // for the front side
+            colorBufferList.Add(new VertexPositionColor(top4, new Color(1, 2, 3)));
+            colorBufferList.Add(new VertexPositionColor(down3, new Color(1, 2, 3)));
+            colorBufferList.Add(new VertexPositionColor(top3, new Color(1, 2, 3)));
+            colorBufferList.Add(new VertexPositionColor(top4, new Color(1, 2, 3)));
+            colorBufferList.Add(new VertexPositionColor(down4, new Color(1, 2, 3)));
+            colorBufferList.Add(new VertexPositionColor(down3, new Color(1, 2, 3)));
 
-            //// for the front side
-            //colorBufferList.Add(new VertexPositionColor(top1, new Color(1, 2, 3)));
-            //colorBufferList.Add(new VertexPositionColor(top2, new Color(1, 2, 3)));
-            //colorBufferList.Add(new VertexPositionColor(down2, new Color(1, 2, 3)));
-            //colorBufferList.Add(new VertexPositionColor(top1, new Color(1, 2, 3)));
-            //colorBufferList.Add(new VertexPositionColor(down2, new Color(1, 2, 3)));
-            //colorBufferList.Add(new VertexPositionColor(down1, new Color(1, 2, 3)));
+            // for the front side
+            colorBufferList.Add(new VertexPositionColor(top1, new Color(1, 2, 3)));
+            colorBufferList.Add(new VertexPositionColor(top2, new Color(1, 2, 3)));
+            colorBufferList.Add(new VertexPositionColor(down2, new Color(1, 2, 3)));
+            colorBufferList.Add(new VertexPositionColor(top1, new Color(1, 2, 3)));
+            colorBufferList.Add(new VertexPositionColor(down2, new Color(1, 2, 3)));
+            colorBufferList.Add(new VertexPositionColor(down1, new Color(1, 2, 3)));
 
-            //// for the left side
-            //colorBufferList.Add(new VertexPositionColor(top4, new Color(1, 2, 3)));
-            //colorBufferList.Add(new VertexPositionColor(top1, new Color(1, 2, 3)));
-            //colorBufferList.Add(new VertexPositionColor(down1, new Color(1, 2, 3)));
-            //colorBufferList.Add(new VertexPositionColor(top4, new Color(1, 2, 3)));
-            //colorBufferList.Add(new VertexPositionColor(down1, new Color(1, 2, 3)));
-            //colorBufferList.Add(new VertexPositionColor(down4, new Color(1, 2, 3)));
+            // for the left side
+            colorBufferList.Add(new VertexPositionColor(top4, new Color(1, 2, 3)));
+            colorBufferList.Add(new VertexPositionColor(top1, new Color(1, 2, 3)));
+            colorBufferList.Add(new VertexPositionColor(down1, new Color(1, 2, 3)));
+            colorBufferList.Add(new VertexPositionColor(top4, new Color(1, 2, 3)));
+            colorBufferList.Add(new VertexPositionColor(down1, new Color(1, 2, 3)));
+            colorBufferList.Add(new VertexPositionColor(down4, new Color(1, 2, 3)));
 
-            //// for the front side
-            //colorBufferList.Add(new VertexPositionColor(top3, new Color(1, 2, 3)));
-            //colorBufferList.Add(new VertexPositionColor(down2, new Color(1, 2, 3)));
-            //colorBufferList.Add(new VertexPositionColor(top2, new Color(1, 2, 3)));
-            //colorBufferList.Add(new VertexPositionColor(top3, new Color(1, 2, 3)));
-            //colorBufferList.Add(new VertexPositionColor(down3, new Color(1, 2, 3)));
-            //colorBufferList.Add(new VertexPositionColor(down2, new Color(1, 2, 3)));
-            //this.colorBuffer = colorBufferList.ToArray();
+            // for the front side
+            colorBufferList.Add(new VertexPositionColor(top3, new Color(1, 2, 3)));
+            colorBufferList.Add(new VertexPositionColor(down2, new Color(1, 2, 3)));
+            colorBufferList.Add(new VertexPositionColor(top2, new Color(1, 2, 3)));
+            colorBufferList.Add(new VertexPositionColor(top3, new Color(1, 2, 3)));
+            colorBufferList.Add(new VertexPositionColor(down3, new Color(1, 2, 3)));
+            colorBufferList.Add(new VertexPositionColor(down2, new Color(1, 2, 3)));
+            this.colorBuffer = colorBufferList.ToArray();
             return colorBuffer;
         }
 

@@ -8,7 +8,7 @@ using SharpDX.Toolkit;
 namespace Project1
 {
     using SharpDX.Toolkit.Graphics;
-
+    
     public enum ModelType
     {
         Colored, Textured
@@ -21,21 +21,21 @@ namespace Project1
         public ModelType modelType;
         public Texture2D Texture;
 
-        public MyModel(Project1Game game, VertexPositionColor[] shapeArray)
+        public MyModel(Project1Game game, VertexPositionColor[] shapeArray, String textureName)
         {
             this.vertices = Buffer.Vertex.New(game.GraphicsDevice, shapeArray);
-            //this.inputLayout = VertexInputLayout.New<VertexPositionColor>(0);
-            //vertexStride = Utilities.SizeOf<VertexPositionColor>();
-            //modelType = ModelType.Colored;
+            this.inputLayout = VertexInputLayout.New<VertexPositionColor>(0);
+            vertexStride = Utilities.SizeOf<VertexPositionColor>();
+            modelType = ModelType.Colored;
         }
 
-        //public MyModel(Project1Game game, VertexPositionTexture[] shapeArray, String textureName)
-        //{
-        //    this.vertices = Buffer.Vertex.New(game.GraphicsDevice, shapeArray);
-        //    this.inputLayout = VertexInputLayout.New<VertexPositionTexture>(0);
-        //    vertexStride = Utilities.SizeOf<VertexPositionTexture>();
-        //    modelType = ModelType.Textured;
-        //    Texture = game.Content.Load<Texture2D>(textureName);
-        //}
+        public MyModel(Project1Game game, VertexPositionTexture[] shapeArray, String textureName)
+        {
+            this.vertices = Buffer.Vertex.New(game.GraphicsDevice, shapeArray);
+            this.inputLayout = VertexInputLayout.New<VertexPositionTexture>(0);
+            vertexStride = Utilities.SizeOf<VertexPositionTexture>();
+            modelType = ModelType.Textured;
+            Texture = game.Content.Load<Texture2D>(textureName);
+        }
     }
 }

@@ -8,5 +8,32 @@
     mc:Ignorable="d"    
     d:DesignWidth="1280"
     d:DesignHeight="800">
+    <TextBox x:Name="txtScore" HorizontalAlignment="Left" Margin="137,20,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Height="48" Width="87" IsReadOnly="True" FontSize="30" Background="{x:Null}" BorderThickness="0" TextChanged="txtScore_TextChanged"/>
+    <Button x:Name="cmdStart" HorizontalAlignment="Left" Margin="485,545,0,0" VerticalAlignment="Top" Height="102" Width="107" Click="StartGame" FontSize="50" FontWeight="Bold" Background="#FF3C273B" BorderBrush="#FF6C2151" BorderThickness="6" Content="1"/>
+    <Slider x:Name="dfctySlider" ValueChanged="ChangeDifficulty" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Height="45.093" Margin="370.417,685.341,135.347,69.565" Maximum="10" Value="5" FontFamily="Arial Black">
+        <Slider.RenderTransform>
+            <CompositeTransform SkewY="0.353" TranslateY="2.233" Rotation="-0.368"/>
+        </Slider.RenderTransform>
+    </Slider>
+    <Slider x:Name="launchDegreeSlider" HorizontalAlignment="Left" Margin="1215,49,0,0" VerticalAlignment="Top" Width="55" Height="590" ValueChanged="changeAngle" Orientation="Vertical" Maximum="89" Background="#29431761" BorderBrush="#FF0F0808"/>
+    <Button x:Name="launchButton" Content="Launch!" HorizontalAlignment="Left" Margin="1037,644,0,0" VerticalAlignment="Top" Height="126" Width="210" Click="launchCannonball" FontSize="48" Background="#FF9B2121" BorderBrush="#FF1D1414" BorderThickness="6"/>
+    <TextBox x:Name="launchAngleText" HorizontalAlignment="Left" Margin="1285,679,-105,0" TextWrapping="Wrap" Text="Tilt Angle" VerticalAlignment="Top" Width="100" BorderBrush="{x:Null}" Background="{x:Null}"/>
+    <Slider x:Name="aimCannonSlider" HorizontalAlignment="Left" Margin="49,669,0,0" VerticalAlignment="Top" Width="965" Maximum="180" LargeChange="30" ValueChanged="ChangeXAngle" Value="89"/>
+    <Slider x:Name="launchPowerSlider" HorizontalAlignment="Left" Margin="10,86,0,0" VerticalAlignment="Top" Width="100" Orientation="Vertical" Height="575" Value="5" ValueChanged="ChangePower" Maximum="10"/>
+    <TextBlock x:Name="titleLabel" HorizontalAlignment="Left" Margin="385,183,0,0" TextWrapping="Wrap" Text="Ready, Aim, Fire!" VerticalAlignment="Top" Width="570" Height="125" FontSize="72" Foreground="#FF6C2020" FontWeight="ExtraBold"/>
+    <TextBlock x:Name="velocityLabel" HorizontalAlignment="Left" Margin="49,275,0,0" TextWrapping="Wrap" Text="Velocity" VerticalAlignment="Top" Height="33" Width="107" FontSize="20" Foreground="#FF6E4E4E" FontWeight="ExtraBlack" FontStyle="Italic"/>
+    <TextBlock x:Name="tiltLabel" HorizontalAlignment="Left" Margin="1186,275,-13,0" TextWrapping="Wrap" Text="Tilt" VerticalAlignment="Top" Height="33" Width="107" FontSize="20" Foreground="#FF6E4E4E" FontWeight="ExtraBlack" FontStyle="Italic"/>
+    <TextBlock x:Name="aimLabel" HorizontalAlignment="Left" Margin="485,734,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="33" Width="107" FontSize="20" Foreground="#FF6E4E4E" FontWeight="ExtraBlack" FontStyle="Italic">
+    	<Run Text="A"/>
+    	<Run Text="im"/>
+    </TextBlock>
+    <TextBlock x:Name="scoreLabel" HorizontalAlignment="Left" Margin="63,33,0,0" TextWrapping="Wrap" Text="Score" VerticalAlignment="Top" Height="48" Width="93" Foreground="#FF322C2C" FontSize="22" FontWeight="Bold"/>
+    <TextBlock x:Name="scoreLabel_Copy" HorizontalAlignment="Left" Margin="229,33,0,0" TextWrapping="Wrap" Text="Best Attempt" VerticalAlignment="Top" Height="48" Width="138" Foreground="#FF322C2C" FontSize="22" FontWeight="Bold"/>
+    <TextBox x:Name="txtScore_Copy" HorizontalAlignment="Left" Margin="385,20,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="48" Width="87" IsReadOnly="True" FontSize="30" Background="{x:Null}" BorderThickness="0" TextChanged="txtScore_TextChanged"/>
+    <TextBlock x:Name="scoreLabel_Copy1" HorizontalAlignment="Left" Margin="485,33,0,0" TextWrapping="Wrap" Text="Current Attempt" VerticalAlignment="Top" Height="48" Width="190" Foreground="#FF322C2C" FontSize="22" FontWeight="Bold"/>
+    <TextBox x:Name="txtScore_Copy1" HorizontalAlignment="Left" Margin="675,20,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="48" Width="87" IsReadOnly="True" FontSize="30" Background="{x:Null}" BorderThickness="0" TextChanged="txtScore_TextChanged"/>
+    <Button x:Name="cmdStart_Copy" HorizontalAlignment="Left" Margin="612,545,0,0" VerticalAlignment="Top" Height="102" Width="107" Click="StartGame2" FontSize="50" FontWeight="Bold" Background="#FF3C273B" BorderBrush="#FF6C2151" BorderThickness="6" Content="2"/>
+    <Button x:Name="cmdStart_Copy1" HorizontalAlignment="Left" Margin="735,545,0,0" VerticalAlignment="Top" Height="102" Width="107" Click="StartGame3" FontSize="50" FontWeight="Bold" Background="#FF3C273B" BorderBrush="#FF6C2151" BorderThickness="6" Content="3"/>
+    <TextBlock x:Name="stagename" HorizontalAlignment="Left" Margin="599,483,0,0" TextWrapping="Wrap" Text="Stage" VerticalAlignment="Top" Foreground="Black" FontSize="50" Width="133" RenderTransformOrigin="0.759,0.457"/>
 
 </SwapChainBackgroundPanel>

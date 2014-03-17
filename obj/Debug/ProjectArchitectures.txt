@@ -1,1 +1,1 @@
-I:\gitRepository\graphics-project\MiniCube.WinRTXaml.csproj;neutral
+D:\BitBucket_Repository\graphics-project\MiniCube.WinRTXaml.csproj;neutral

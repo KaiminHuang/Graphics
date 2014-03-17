@@ -40,32 +40,60 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Ball.cs" />
+    <Compile Include="Arrow.cs" />
+    <Compile Include="Assets.cs" />
     <Compile Include="BallMovement.cs" />
     <Compile Include="BufferGenerator.cs" />
     <Compile Include="Camera.cs" />
+    <Compile Include="CannonModel.cs" />
+    <Compile Include="Explosion.cs" />
     <Compile Include="ColoredGameObject.cs" />
     <Compile Include="ColorSetting.cs" />
+    <Compile Include="SkyBoxController.cs" />
+    <Compile Include="MyModel.cs" />
+    <Compile Include="SkyBox.cs" />
+    <Compile Include="GameInput.cs" />
     <Compile Include="GameObject.cs" />
     <Compile Include="Landscape.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="MyModel.cs" />
     <Compile Include="Project1Game.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tree.cs" />
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="PackageXaml.appxmanifest">
       <SubType>Designer</SubType>
     </AppxManifest>
+    <ToolkitModel Include="Content\Sphere.x" />
+    <None Include="Content\arrow6.mtl" />
+    <ToolkitModel Include="Content\arrow6.obj" />
+    <None Include="Content\bark1.tga" />
+    <None Include="Content\bark1_nmp.tga" />
+    <None Include="Content\leafs1.tga" />
+    <None Include="Content\Map__11_Raytrace.tga" />
+    <None Include="Content\test1.mtl" />
+    <ToolkitModel Include="Content\Cannon.obj" />
+    <ToolkitModel Include="Content\tree1a_lod0.obj" />
+    <ToolkitModel Include="Content\tree1a_lod1.obj" />
+    <ToolkitModel Include="Content\tree1a_lod2.obj" />
+    <ToolkitModel Include="Content\tree1b_lod0.obj" />
+    <ToolkitModel Include="Content\tree1b_lod1.obj" />
+    <ToolkitModel Include="Content\tree1b_lod2.obj" />
     <None Include="MiniCube.WinRTXaml_TemporaryKey.pfx" />
+    <ToolkitModel Include="Content\tree1.obj" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\Logo.png" />
     <Content Include="Assets\SmallLogo.png" />
     <Content Include="Assets\SplashScreen.png" />
     <Content Include="Assets\StoreLogo.png" />
+    <Content Include="Content\enemy.png" />
+    <Content Include="Content\skybox_texture.jpg" />
+    <ToolkitTexture Include="Content\cannonssd.jpg" />
+    <ToolkitTexture Include="Content\Cedfence.JPG" />
+    <ToolkitTexture Include="Content\Steelplt.JPG" />
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
